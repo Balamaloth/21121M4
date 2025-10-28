@@ -1,0 +1,627 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #0e0e0e;
+  overflow: hidden;
+}
+
+.wrapper {
+  position: relative;
+  width: 600px;
+  height: 420px;
+  background: rgba(255, 240, 250, 0.9);
+  border-radius: 22px;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(255, 77, 184, 0.8);
+  animation: fadeIn 1.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(40px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+.love-img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  outline: 4px dashed #ff4dc4;
+  animation: pop 1.7s infinite ease-in-out;
+}
+
+@keyframes pop {
+  0%,100% {transform: scale(1);}
+  50% {transform: scale(1.1);}
+}
+
+.question {
+  color: #d12c8b;
+  font-size: 1.5em;
+  margin-top: 18px;
+  text-shadow: 0 0 10px #ff97d0;
+}
+
+.btn-group {
+  margin-top: 25px;
+}
+
+button {
+  position: absolute;
+  width: 150px;
+  height: 45px;
+  border-radius: 30px;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.yes-btn {
+  background: #ff2fa1;
+  color: #fff;
+  left: 120px;
+  animation: glow 1.2s infinite alternate;
+}
+
+@keyframes glow {
+  from {box-shadow: 0 0 8px #ff59c0;}
+  to {box-shadow: 0 0 20px #ff0077;}
+}
+
+.no-btn {
+  left: 330px;
+  background: #fff;
+  color: #ff0055;
+  border: 2px solid #ff0055;
+}
+
+.ending {
+  opacity: 0;
+  font-size: 14px;
+  margin-top: 140px;
+  color: #e80270;
+  transition: .5s ease-in-out;
+}
+
+.heart-bg {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+  ----
+.heart {
+  position: fixed;
+  top: -10px;
+  font-size: 28px;
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  to {transform: translateY(105vh);}
+}
+
+.shake {
+  animation: shake 0.3s;
+}
+
+@keyframes shake {
+  0% {transform: translate(0, 0);}
+  25% {transform: translate(-5px, 5px);}
+  50% {transform: translate(5px, -5px);}
+  75% {transform: translate(-5px, 5px);}
+  100% {transform: translate(0, 0);}
+}
+.float {
+    animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-10px);}
+    100% {transform: translateY(0);}
+}
+.question {
+    font-size: 1.7em;
+    color: #ffffff;
+    text-shadow: 0 0 20px #ff0066;
+    margin-bottom: 15px;
+}
+.btn-group {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+button {
+    position: absolute;
+    width: 160px;
+    height: 50px;
+    font-size: 1.3em;
+    font-weight: 700;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+.yes-btn {
+    left: 10%;
+    background: #00c853;
+    color: white;
+    box-shadow: 0 0 20px #00ff7b;
+}
+.yes-btn:hover {
+    transform: scale(1.2);
+    background: #009e45;
+}
+.no-btn {
+    right: 10%;
+    background: #d50000;
+    color: white;
+    box-shadow: 0 0 20px #ff3333;
+}
+.no-btn:hover {
+    transform: scale(1.2);
+    background: #a30000;
+}
+
+.ending {
+    opacity: 0;
+    font-size: 14px;
+    margin-top: 140px;
+    color: #e80270;
+    transition: .5s ease-in-out;
+}
+.heart-bg {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+.heart {
+    position: fixed;
+    top: -10px;
+    font-size: 28px;
+    animation: fall linear forwards;
+}
+@keyframes fall {
+    to {transform: translateY(555vh);}
+}
+.shake {
+    animation: shake 0s;
+}
+
+@keyframes shake {
+    0% {transform: translate(0, 0);}
+    25% {transform: translate(-5px, 5px);}
+    50% {transform: translate(5px, -5px);}
+    75% {transform: translate(-5px, 5px);}
+    100% {transform: translate(0, 0);}
+}
+.float {
+    animation: float 3s infinite ease-in-out;
+}
+@keyframes float {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-10px);}
+    100% {transform: translateY(0);}
+}
+.question { 
+    font-size: 1.7em;
+    color: #ffffff;
+    text-shadow: 0 0 20px #ff0066;
+    margin-bottom: 15px;
+}   
+.btn-group {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+button {
+    position: absolute;
+    width: 160px;
+    height: 50px;
+    font-size: 1.3em;
+    font-weight: 700;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+.yes-btn {
+    left: 10%;
+    background: #00c853;
+    color: white;
+    box-shadow: 0 0 20px #00ff7b;
+}
+.yes-btn:hover {
+    transform: scale(1.2);
+    background: #009e45;
+}
+.no-btn {
+    right: 10%;
+    background: #d50000;
+    color: white;
+    box-shadow: 0 0 20px #ff3333;
+}
+.no-btn:hover {
+    transform: scale(1.2);
+    background: #a30000;
+}
+.ending {
+    opacity: 0;
+    font-size: 14px;
+    margin-block-end: 500px;
+    color: #f2057f1e;
+    transition: .5s ease-in-out;
+}
+.heart-bg {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;   
+}
+.heart {
+    position: fixed;
+    top: -10px;
+    font-size: 28px;
+    animation: fall linear forwards;
+}           
+@keyframes fall {
+    to {transform: translateY(105vh);}
+}
+.shake {
+    animation: shake 0.3s;
+}
+@keyframes shake {
+    0% {transform: translate(0, 0);}
+    25% {transform: translate(-5px, 5px);}
+    50% {transform: translate(5px, -5px);}
+    75% {transform: translate(-5px, 5px);}
+    100% {transform: translate(0, 0);}
+}
+.float {
+    animation: float 3s infinite ease-in-out;
+}
+@keyframes float {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-10px);}
+    100% {transform: translateY(0);}
+}       
+.question {
+    font-size: 1.7em;
+    color: #ffffff;
+    text-shadow: 0 0 20px #ff0066;
+    margin-bottom: 15px;
+}
+.btn-group {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+button {
+    position: absolute;
+    width: 160px;
+    height: 50px;
+    font-size: 1.3em;
+    font-weight: 700;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+.yes-btn {
+    left: 10%;
+    background: #00c853;
+    color: white;
+    box-shadow: 0 0 20px #00ff7b;
+}
+.yes-btn:hover {
+    transform: scale(1.2);
+    background: #009e45;
+}
+.no-btn {
+    right: 10%;
+    background: #d50000;
+    color: white;
+    box-shadow: 0 0 20px #ff3333;
+}
+.no-btn:hover {
+    transform: scale(1.2);
+    background: #a30000;
+}
+.ending {
+    opacity: 0;
+    font-size: 14px;
+    margin-top: 140px;
+    color: #e80270;
+    transition: .5s ease-in-out;
+}
+.heart-bg {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+.heart {
+    position: fixed;
+    top: -10px;
+    font-size: 28px;
+    animation: fall linear forwards;
+}               
+@keyframes fall {
+    to {transform: translateY(105vh);}
+}               
+.shake {
+    animation: shake 0.3s;
+}       
+@keyframes shake {
+    0% {transform: translate(0, 0);}
+    25% {transform: translate(-5px, 5px);}
+    50% {transform: translate(5px, -5px);}
+    75% {transform: translate(-5px, 5px);}
+    100% {transform: translate(0, 0);}
+}
+
+.float {
+    animation: float 3s infinite ease-in-out;
+}
+
+
+
+@keyframes float {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-10px);}
+    100% {transform: translateY(0);}
+}
+
+
+.question {
+    font-size: 1.7em;
+    color: #ffffff;
+    text-shadow: 0 0 20px #ff0066;
+    margin-bottom: 15px;
+}               
+.btn-group {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}       
+button {
+    position: absolute;
+    width: 160px;
+    height: 50px;
+    font-size: 1.3em;
+    font-weight: 700;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s ease-in-out;
+}       
+.yes-btn {
+    left: 10%;
+    background: #00c853;
+    color: white;
+    box-shadow: 0 0 20px #00ff7b;
+}
+.yes-btn:hover {
+    transform: scale(1.2);
+    background: #009e45;
+}
+.no-btn {
+    right: 10%;
+    background: #d50000;
+    color: white;
+    box-shadow: 0 0 20px #ff3333;
+}
+.no-btn:hover {
+    transform: scale(1.2);
+    background: #a30000;
+}
+.ending {
+    opacity: 0;
+    font-size: 14px;
+    margin-top: 140px;
+    color: #e80270;
+    transition: .5s ease-in-out;
+}
+.heart-bg {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+.heart {
+    position: fixed;
+    top: -10px;
+    font-size: 28px;
+    animation: fall linear forwards;
+}
+@keyframes fall {
+    to {transform: translateY(105vh);}
+}
+.shake {
+    animation: shake 0.3s;
+}
+@keyframes shake {
+    0% {transform: translate(0, 0);}
+    25% {transform: translate(-5px, 5px);}
+    50% {transform: translate(5px, -5px);}
+    75% {transform: translate(-5px, 5px);}
+    100% {transform: translate(0, 0);}
+}
+.float {
+    animation: float 3s infinite ease-in-out;
+}
+@keyframes float {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-10px);}
+    100% {transform: translateY(0);}
+}
+.question {
+    font-size: 1.7em;
+    color: #ffffff;
+    text-shadow: 0 0 20px #ff0066;
+    margin-bottom: 15px;
+}
+.btn-group {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+button {
+    position: absolute;
+    width: 160px;
+    height: 50px;
+    font-size: 1.3em;
+    font-weight: 700;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+.yes-btn {
+    left: 10%;
+    background: #00c853;
+    color: white;
+    box-shadow: 0 0 20px #00ff7b;
+}
+.yes-btn:hover {
+    transform: scale(1.2);
+    background: #009e45;
+}
+
+
+
+
+/* Full-screen blast overlay for NO */
+.fullscreen-blast {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(255,200,220,0.4) 40%, rgba(255,0,0,0.2) 70%, transparent 100%);
+  z-index: 15;
+  opacity: 0;
+  pointer-events: none;
+  animation: blastExpandScreen 0.6s forwards;
+}
+
+@keyframes blastExpandScreen {
+  0% {opacity: 0; transform: scale(0);}
+  50% {opacity: 1; transform: scale(1);}
+  100% {opacity: 1; transform: scale(1);}
+}
+/* Shard styles for cracked screen effect */
+.shard {
+    position: fixed;
+    width: 12px;
+    height: 30px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(240,240,240,0.6));
+    transform-origin: center;
+    border-radius: 3px;
+    z-index: 16;
+    opacity: 0;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.48);
+    animation: shardFlyScreen 0.95s cubic-bezier(.1,.9,.2,1) forwards;
+    }   
+@keyframes shardFlyScreen {
+    0% {opacity: 1; transform: translate(0,0) rotate(0) scale(1);}
+    100% {opacity: 0; transform: translate(var(--tx), var(--ty)) rotate(var(--rot)) scale(0.9);}
+}
+/* Cracked overlay */
+.crack-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 14;
+  opacity: 0;
+  transition: opacity 0.45s ease;
+  background: linear-gradient(180deg, rgba(0,0,0,0.15), rgba(0,0,0,0.25));
+  backdrop-filter: blur(1px);
+}
+.crack-overlay.active {
+  opacity: 1;
+}
+/* Ending message style */
+.ending {
+  margin-top: 36px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.ending{margin-top:36px;color:rgba(255,255,255,0.5)}
+/* effect layer sits above page content */
+.effect-layer{
+  position:fixed;inset:0;pointer-events:none;z-index:10;overflow:visible;
+}
+/* Heart particle style (used for proposal) */
+.heart {
+  position:fixed; font-size:22px; pointer-events:none; z-index:11;
+  filter: drop-shadow(0 10px 20px rgba(255,0,120,0.2));
+}
+/* hearts from sides have different initial transforms (controlled in JS) */
+/* blast pulse */
+.blast {    
+    position:absolute;width:40px;height:40px;border-radius:50%;
+    background: radial-gradient(circle,#fff 0%, rgba(255,200,220,0.9) 30%, transparent 60%);
+    transform: translate(-50%, -50%) scale(0);
+    filter: blur(.2px);
+    z-index:12;
+    animation:blastExpand .6s cubic-bezier(.2,.9,.2,1) forwards;
+    }
+@keyframes blastExpand {
+    0% {transform: translate(-50%,-50%) scale(0); opacity: 1;}
+    60% {transform: translate(-50%,-50%) scale(3.6); opacity: .95;}
+    100% {transform: translate(-50%,-50%) scale(7.4); opacity: 0;}
+}
+/* shards (glass pieces) */
+.shard {
+  position:absolute; width:10px; height:26px; background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(240,240,240,0.6));
+  transform-origin:center; border-radius:3px; z-index:12; opacity:0;
+  box-shadow:0 8px 24px rgba(0,0,0,0.48);
+  animation:shardFly .95s cubic-bezier(.1,.9,.2,1) forwards;
+}
+@keyframes shardFly {
+  0%{opacity:1; transform:translate(0,0) rotate(0) scale(1)}
+  100%{opacity:0; transform:translate(var(--tx), var(--ty)) rotate(var(--rot)) scale(.9)}
+}
+/* screen shake applied to root for dramatic camera shake */
+.shake { animation:screenShake .8s ease-in-out; }
+@keyframes screenShake {    
+    0%{transform:translate(0)}
+    20%{transform:translate(-12px,8px) rotate(-0.6deg)}
+    40%{transform:translate(10px,-6px) rotate(.6deg)}
+    60%{transform:translate(-8px,6px)}
+    80%{transform:translate(6px,-4px)}
+    100%{transform:translate(0)}
+    }
+/* cracked overlay */
+.crack-overlay{
+    position:fixed;inset:0;pointer-events:none;z-index:9;opacity:0;transition:opacity .45s ease;
+    background: linear-gradient(180deg, rgba(0,0,0,0.15), rgba(0,0,0,0.25));
+    backdrop-filter: blur(1px);
+    }
+.crack-overlay.active{opacity:1}
