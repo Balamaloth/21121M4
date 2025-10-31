@@ -56,7 +56,7 @@ If you’re reading this and you’re the one…
 **Yes, this is for you.** 💞  
 Will you be mine forever? 🌹  
 
-<img src="https://github.com/user-attachments/assets/70cb561c-5338-427d-b39a-ea5612d0eb45" alt="Round Image" class="round-image" width="5">
+<img src="https://github.com/user-attachments/assets/70cb561c-5338-427d-b39a-ea5612d0eb45" alt="Round Image" class="round-image" width="50">
 
 
 
