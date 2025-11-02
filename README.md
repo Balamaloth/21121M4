@@ -8,7 +8,7 @@
 ![JavaScript](https://img.shields.io/badge/JS-ES6-yellow?style=for-the-badge&logo=javascript)
 
 ---
-
+  
 ## 💌 About the Project
 This is not just a web page — it’s a **digital love letter**, crafted with code and emotion.  
 A simple yet heartfelt **Love Proposal Website** designed to express feelings in the most creative way possible.  
